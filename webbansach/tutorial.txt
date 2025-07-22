@@ -1,0 +1,16 @@
+xóa hết xampp tải lại xamp. và run admin
+http://localhost/web/
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    ten_nguoi_dung VARCHAR(100) NOT NULL,
+    ten_dang_nhap VARCHAR(50) NOT NULL UNIQUE,
+    mat_khau VARCHAR(255) NOT NULL,
+    quyen ENUM('Quản trị', 'Khách hàng') NOT NULL
+);
+
+INSERT INTO users (ten_nguoi_dung, ten_dang_nhap, mat_khau, quyen) VALUES
+('admin', 'admin', 'ad@123', 'Quản trị'),
+('customer', 'customer', 'kh@123', 'Khách hàng');
+
+
